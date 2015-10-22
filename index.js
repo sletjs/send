@@ -75,8 +75,9 @@ function send(ctx, path, opts) {
       // and not require a trailing slash for directories,
       // so that you can do both `/directory` and `/directory/`
       if (stats.isDirectory()) {
-        if (opts.format) {
+        if (opts.format && index) {
           path += '/' + index;
+          stats = yield fs.stat(path);
         } else {
           return;
         }
