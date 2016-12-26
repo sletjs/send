@@ -1,7 +1,7 @@
 {
-  "name": "koa-send",
+  "name": "slet-send",
   "description": "Transfer static files",
-  "repository": "koajs/send",
+  "repository": "sletjs/send",
   "version": "3.2.0",
   "keywords": [
     "koa",
